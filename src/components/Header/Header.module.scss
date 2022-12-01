@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__title {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: rgb(167, 167, 167);
+    }
+}

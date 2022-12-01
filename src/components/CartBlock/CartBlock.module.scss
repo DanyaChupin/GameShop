@@ -1,0 +1,19 @@
+.cartBlock {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.cartBlock__totallenhts {
+    position: relative;
+}
+
+.cartBlock__totalPrice {
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cartBlock__icon {
+    position: relative;
+}
