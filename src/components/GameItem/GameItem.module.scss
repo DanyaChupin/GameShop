@@ -10,6 +10,10 @@
 .gameItem__title {
     font-size: 18px;
     font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .gameItem__details {
@@ -21,8 +25,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.gameItem_description {
-    margin-top: 10px;
-    font-size: 14px;
+.gameItem__buy {
+    margin-top: 0 auto;
 }

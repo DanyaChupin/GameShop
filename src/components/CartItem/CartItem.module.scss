@@ -1,9 +1,14 @@
 .cartItem__wrapper {
     display: flex;
-    justify-content: space-between;
 
-    padding: 10px 10px;
+    padding: 10px 0px;
+}
+.cartItem__price {
+    margin-left: auto;
+    display: flex;
 }
 .cartItem__button {
-    margin-left: 15px;
+    height: 25px;
+
+    margin-left: 20px;
 }

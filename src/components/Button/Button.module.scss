@@ -1,24 +1,15 @@
 .button {
     border: none;
     color: white;
-    background-color: black;
+    font-weight: bold;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    background-color: rgb(33, 34, 35);
     border-radius: 15px;
     padding: 5px;
+
     cursor: pointer;
-}
-
-.buttonPrimary {
-    background-color: rgb(85, 88, 237);
-}
-
-.button--secondary {
-    background-color: rgb(80, 82, 84);
-}
-
-.button--small {
-    font-size: 14px;
-}
-
-.button--medium {
-    font-size: 18px;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: rgb(52, 54, 60);
+    }
 }

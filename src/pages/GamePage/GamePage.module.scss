@@ -3,6 +3,9 @@
 }
 .gamePage__left {
     width: 70%;
+    iframe {
+        border-radius: 20px;
+    }
 }
 .gamePage__right {
     width: 30%;
@@ -12,4 +15,29 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 924px) {
+    .gamePage__content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .gamePage__right {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .gamePage__buygame {
+        width: 100%;
+        font-size: 30px;
+        justify-content: space-between;
+    }
+    .gamePage__left {
+        iframe {
+            border-radius: 20px;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+    }
 }

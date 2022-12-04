@@ -18,3 +18,18 @@
     font-size: 20px;
     margin-left: auto;
 }
+@media only screen and (max-width: 760px) {
+    .orderItem {
+        flex-direction: column;
+    }
+    .orderItem__cover {
+        width: 100%;
+        object-fit: fill;
+    }
+    .orderItem__price {
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: auto;
+        margin-left: 0;
+    }
+}

@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import GameCover from '../GameCover/GameCover'
-import { AiOutLineCloseCircle } from 'react-icons/ai'
 import styles from './OrderItem.module.scss'
 import { deleteItemFromCart } from '../../redux/cart/reducer'
 import Button from '../Button/Button'
@@ -26,7 +25,7 @@ const OrderItem = ({ game }) => {
           className={styles.cartItem__deliteicon}
           onClick={handleClick}
         >
-          ?
+          Удалить
         </Button>
       </div>
     </div>
