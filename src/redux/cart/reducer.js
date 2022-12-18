@@ -14,8 +14,12 @@ const cartSlice = createSlice({
         game => game.id !== action.payload
       )
     },
+    cleanAllCart: state => {
+      state.itemsInCart = []
+    },
   },
 })
 
-export const { setItemInCart, deleteItemFromCart } = cartSlice.actions
+export const { setItemInCart, deleteItemFromCart, cleanAllCart } =
+  cartSlice.actions
 export default cartSlice.reducer

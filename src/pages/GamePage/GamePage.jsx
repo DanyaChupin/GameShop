@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux'
 import GameCover from '../../components/GameCover/GameCover'
 import GameGenre from '../../components/GameGenre/GameGenre'
 import GameBuy from '../../components/GameBuy/GameBuy'
+
 const GamePage = () => {
   const game = useSelector(state => state.game.currentGame)
-  console.log('game', game)
   if (!game) return null
   return (
     <div className={styles.gamePage}>

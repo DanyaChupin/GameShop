@@ -5,7 +5,12 @@ import { calctotalPrice } from '../utils'
 import styles from './CartMenu.module.scss'
 const CartMenu = ({ items, onClick }) => {
   return (
-    <div className={styles.cartMenu}>
+    <div
+      className={styles.cartMenu}
+      style={
+        items.length ? { width: '400px' } : { width: '200px', left: '-200px' }
+      }
+    >
       <div className={styles.cartMenu__gamelist}>
         {items.length
           ? items.map(game => <CartItem key={game.title} game={game} />)
