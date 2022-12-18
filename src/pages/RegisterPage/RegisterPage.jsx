@@ -9,7 +9,7 @@ const RegisterPage = () => {
       <SignUp />
       <p>
         Если у вас уже есть аккаунт перейдите на
-        <Link to={'/login'}> Авторизацию</Link>
+        <Link to={'/'}> Авторизацию</Link>
       </p>
     </div>
   )

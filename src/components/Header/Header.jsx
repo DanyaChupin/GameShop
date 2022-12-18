@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.wrapper}>
-        <Link to={isAuth ? '/home' : '/login'} className={styles.header__title}>
+        <Link to={isAuth ? '/home' : '/'} className={styles.header__title}>
           GAME STORE
         </Link>
       </div>

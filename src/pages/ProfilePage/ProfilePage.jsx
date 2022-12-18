@@ -13,7 +13,7 @@ const ProfilePage = () => {
   const signOut = () => {
     dispatch(removeUser())
     dispatch(cleanAllCart())
-    navigate('/login')
+    navigate('/')
   }
   return isAuth ? (
     <div>
@@ -28,7 +28,7 @@ const ProfilePage = () => {
   ) : (
     <div>
       <h1>Вы не авторизированы</h1>
-      <Link to={'/login'}> -> Авторизация</Link>
+      <Link to={'/'}> -> Авторизация</Link>
     </div>
   )
 }

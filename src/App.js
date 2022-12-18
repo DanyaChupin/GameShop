@@ -19,7 +19,7 @@ function App() {
           <Header />
 
           <Routes>
-            <Route path="/login" element={<LoginPage />} exact />
+            <Route path="/" element={<LoginPage />} exact />
           </Routes>
           <Routes>
             <Route path="/profile" element={<ProfilePage />} exact />
