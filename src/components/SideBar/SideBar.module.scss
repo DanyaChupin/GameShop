@@ -1,0 +1,27 @@
+.sideBar {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0px;
+    background-color: rgb(25, 26, 28);
+    transition: all 0.5s;
+    width: 180px;
+    height: 100vh;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sideBar__closed {
+    left: -250px;
+}
+.sideBar__title {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.sideBar__icon {
+    display: inline;
+    margin-left: 130px;
+}

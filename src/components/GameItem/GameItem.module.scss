@@ -1,10 +1,12 @@
 .gameItem {
-    width: 320px;
+    width: 31%;
     height: 300px;
     background-color: rgb(36, 37, 41);
     border-radius: 15px;
     cursor: pointer;
     margin: 10px;
+    transition: 0.3s box-shadow ease;
+    transition: width 0.1s;
 }
 
 .gameItem__title {
@@ -27,4 +29,31 @@
 }
 .gameItem__buy {
     margin-top: 0 auto;
+}
+@media only screen and (max-width: 1207px) {
+    .gameItem {
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .gameItem {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 820px) {
+    .gameItem:hover {
+        box-shadow: 0px 10px 10px 1px rgba(36, 36, 36, 0.5);
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .gameItem {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .gameItem {
+        width: 100%;
+    }
 }

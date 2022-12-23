@@ -1,0 +1,29 @@
+.serchInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.serchInput__Wrapper {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+}
+
+.serchInput__input {
+    background: none;
+    color: white;
+    font-size: 17px;
+    border: none;
+    &:active {
+        border: none;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+}

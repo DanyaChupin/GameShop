@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './Form.styles.scss'
+import styles from './Form.module.scss'
 const Form = ({ title, handleClick }) => {
   const [email, setEmail] = useState('')
   const [pass, setPass] = useState('')

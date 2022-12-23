@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import cartReducer from './cart/reducer'
 import gamesReducer from './games/reducer'
 import authReducer from './auth/reducer'
+import filterReducer from './gameFiltering/reducer'
 import {
   persistStore,
   persistReducer,
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   game: gamesReducer,
   auth: authReducer,
+  gamesFiltering: filterReducer,
 })
 
 const persistConfig = {

@@ -1,6 +1,25 @@
-.homePage {
+.homePage__right {
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    justify-content: flex-start;
+    height: 300px;
+}
+.homePage {
+    display: flex;
+}
+
+.homePage__left {
+    margin-right: 70px;
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 910px) {
+    .homePage__left {
+        display: none;
+    }
+    .homePage {
+        display: block;
+    }
 }

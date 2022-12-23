@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import BurgerMenu from '../BurgerMenu/BurgerMenu'
 
 import CartBlock from '../CartBlock/CartBlock'
 import styles from './Header.module.scss'
@@ -15,6 +16,7 @@ const Header = () => {
         </Link>
       </div>
       <div className={styles.header__basket}>
+        <BurgerMenu />
         <CartBlock />
       </div>
     </div>

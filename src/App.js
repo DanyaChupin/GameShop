@@ -9,7 +9,6 @@ import OrderPage from './pages/OrderPage/OrderPage'
 import LoginPage from './pages/LoginPage/LoginPage'
 import RegisterPage from './pages/RegisterPage/RegisterPage'
 import ProfilePage from './pages/ProfilePage/ProfilePage'
-import { useAuth } from './hooks/useAuth'
 
 function App() {
   return (
