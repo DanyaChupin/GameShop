@@ -5,6 +5,8 @@
 .sideBar__genres {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+    padding: 10px 10px;
 }
 
 .sideBar__btn {
