@@ -28,7 +28,7 @@ const HomePage = () => {
       <div className={styles.homePage}>
         <div className={styles.homePage__left}>
           <h2 className={styles.homePage__leftTitle}>Сортировка по:</h2>
-          <SideBarGenre rightGame={rightGame} setRightGame={setRightGame} />
+          <SideBarGenre setRightGame={setRightGame} />
         </div>
         <div className={styles.homePage__right}>
           {currentGenreFilter
@@ -38,12 +38,6 @@ const HomePage = () => {
             : GAMES.filter(games =>
                 games.title.toLowerCase().includes(rightGame.toLowerCase())
               ).map(game => <GameItem game={game} key={game.id} />)}
-          {/* 
-          {rightGame &&
-            GAMES.filter(games =>
-              games.title.toLowerCase().includes(rightGame.toLowerCase())
-            ).map(game => <GameItem game={game} key={game.id} />)}
-           */}
         </div>
       </div>
     </>
@@ -51,9 +45,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-{
-  /* {
-          currentGenreFilter === 'Все игры'
-            ? GAMES.map(game => <GameItem game={game} key={game.id} />)
-            : } */
-}

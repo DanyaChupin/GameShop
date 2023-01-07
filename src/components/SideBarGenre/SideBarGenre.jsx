@@ -14,7 +14,7 @@ const SideBarGenre = ({ setRightGame }) => {
       : dispatch(setCurrentGamesFilter(genre))
   }
   return (
-    <div className={styles.sideBar__genres} style={{}}>
+    <div className={styles.sideBar__genres}>
       {games
         .filter((elem, index) => games.indexOf(elem) === index)
         .map(elem => (

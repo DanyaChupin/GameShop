@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { FiX } from 'react-icons/fi'
 import styles from './SideBar.module.scss'
 import SideBarGenre from '../SideBarGenre/SideBarGenre'
 const SideBar = ({ toggleBurger, opened }) => {
+  const [rightGame, setRightGame] = useState('')
   return (
     <div
       className={`${styles.sideBar} ${opened ? '' : styles.sideBar__closed} `}
@@ -13,7 +14,7 @@ const SideBar = ({ toggleBurger, opened }) => {
       </h2>
       <h1 className={styles.sideBar__title}>Сортировать по:</h1>
 
-      <SideBarGenre />
+      <SideBarGenre setRightGame={setRightGame} />
     </div>
   )
 }
